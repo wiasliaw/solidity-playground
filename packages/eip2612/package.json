@@ -1,0 +1,14 @@
+{
+  "name": "@defi-stack/eip2612",
+  "version": "1.0.0",
+  "description": "A template for monorepo",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0"
+  }
+}
