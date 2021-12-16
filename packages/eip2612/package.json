@@ -1,5 +1,5 @@
 {
-  "name": "@defi-stack/eip2612",
+  "name": "@dev/eip2612",
   "version": "1.0.0",
   "description": "A template for monorepo",
   "license": "MIT",
