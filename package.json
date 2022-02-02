@@ -1,7 +1,7 @@
 {
-  "name": "solidity-monorepo",
+  "name": "solidity-playground",
   "version": "1.0.0",
-  "description": "A monorepo for Solidity development",
+  "description": "my playground of solidity",
   "scripts": {
     "compile:all": "pnpm compile --filter '*'",
     "test:all": "pnpm test --filter '*'",
@@ -9,21 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/defi-stack/solidity-monorepo.git"
+    "url": "git+https://github.com/wiasliaw/solidity-playground.git"
   },
-  "keywords": [
-    "template",
-    "solidity",
-    "monorepo",
-    "pnpm",
-    "hardhat"
-  ],
   "author": "wiasliaw <wiasliaw@protonmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/defi-stack/solidity-monorepo/issues"
-  },
-  "homepage": "https://github.com/defi-stack/solidity-monorepo#readme",
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
