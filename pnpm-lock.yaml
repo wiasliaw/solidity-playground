@@ -45,12 +45,6 @@ importers:
     dependencies:
       '@openzeppelin/contracts': 4.4.0
 
-  packages/staking:
-    specifiers:
-      '@openzeppelin/contracts': ^4.4.0
-    dependencies:
-      '@openzeppelin/contracts': 4.4.0
-
 packages:
 
   /@cspotcode/source-map-consumer/0.8.0:
