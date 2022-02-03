@@ -4,8 +4,12 @@ importers:
 
   .:
     specifiers:
+      '@ethersproject/abi': ^5.0.0
+      '@ethersproject/bytes': ^5.0.0
+      '@ethersproject/providers': ^5.0.0
       '@nomiclabs/hardhat-ethers': ^2.0.3
       '@nomiclabs/hardhat-waffle': ^2.0.1
+      '@openzeppelin/contracts': ^4.4.0
       '@typechain/ethers-v5': ^8.0.5
       '@typechain/hardhat': ^3.0.0
       '@types/chai': ^4.2.22
@@ -23,10 +27,14 @@ importers:
     dependencies:
       '@nomiclabs/hardhat-ethers': 2.0.3_ethers@5.5.2+hardhat@2.7.0
       '@nomiclabs/hardhat-waffle': 2.0.1_60a083bb2c8854f5884feab66e40858d
+      '@openzeppelin/contracts': 4.4.0
       '@typechain/hardhat': 3.0.0_291b6e46b34e447edd2b99175ad36409
       hardhat: 2.7.0
     devDependencies:
-      '@typechain/ethers-v5': 8.0.5_8b32bf896f8832cc4d5401d415481412
+      '@ethersproject/abi': 5.5.0
+      '@ethersproject/bytes': 5.5.0
+      '@ethersproject/providers': 5.5.1
+      '@typechain/ethers-v5': 8.0.5_1635ed1093878362304a6eac84e69991
       '@types/chai': 4.2.22
       '@types/mocha': 9.0.0
       '@types/node': 16.11.11
@@ -38,6 +46,9 @@ importers:
       ts-node: 10.4.0_68212d3c5f342a0c59715bbaaf1875e7
       typechain: 6.0.5_typescript@4.5.2
       typescript: 4.5.2
+
+  packages/eip191:
+    specifiers: {}
 
   packages/eip2612:
     specifiers:
@@ -711,7 +722,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@typechain/ethers-v5/8.0.5_8b32bf896f8832cc4d5401d415481412:
+  /@typechain/ethers-v5/8.0.5_1635ed1093878362304a6eac84e69991:
     resolution: {integrity: sha512-ntpj4cS3v4WlDu+hSKSyj9A3o1tKtWC30RX1gobeYymZColeJiUemC1Kgfa0MWGmInm5CKxoHVhEvYVgPOZn1A==}
     peerDependencies:
       '@ethersproject/abi': ^5.0.0
@@ -721,6 +732,9 @@ packages:
       typechain: ^6.0.4
       typescript: '>=4.0.0'
     dependencies:
+      '@ethersproject/abi': 5.5.0
+      '@ethersproject/bytes': 5.5.0
+      '@ethersproject/providers': 5.5.1
       ethers: 5.5.2
       lodash: 4.17.21
       ts-essentials: 7.0.3_typescript@4.5.2
