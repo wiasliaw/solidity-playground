@@ -13,7 +13,7 @@ describe('EIP191', () => {
   });
 
   it('verifyMessage', async () => {
-    const { keccak256, toUtf8Bytes } = ethers.utils;
+    const { keccak256, toUtf8Bytes, arrayify } = ethers.utils;
     const [user] = await ethers.getSigners();
     const data = keccak256(toUtf8Bytes('hello world'));
 
@@ -30,12 +30,16 @@ describe('EIP191', () => {
      * - `eth_sign` or `personal_sign`
      *   - two rpc method is the same
      * - ethers.Wallet.signMessage
-     *   - MIGHT BUG
+     *   - should use `arrayify`
      */
     const signedData1 = await ethers.provider.send('eth_sign', [user.address.toString(), data]);
-    const signedData2 = await user.signMessage(data);
+    const signedData2 = await user.signMessage(arrayify(data));
 
-    const {v, r, s} = ethers.utils.splitSignature(signedData1);
+    let {v, r, s} = ethers.utils.splitSignature(signedData1);
+    expect(await contract.verifyMessage(data, v, r, s))
+      .eq(true);
+
+    ({v, r, s} = ethers.utils.splitSignature(signedData2));
     expect(await contract.verifyMessage(data, v, r, s))
       .eq(true);
   });

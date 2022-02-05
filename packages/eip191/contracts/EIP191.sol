@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
-import "hardhat/console.sol";
 
 contract EIP191 {
     function verifyMessage(
@@ -13,7 +12,6 @@ contract EIP191 {
     ) external view returns (bool) {
         bytes32 hash = ECDSA.toEthSignedMessageHash(str);
         address addr = ecrecover(hash, v, r, s);
-        console.log(addr);
         return msg.sender == addr;
     }
 }
