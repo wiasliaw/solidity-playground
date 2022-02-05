@@ -1,0 +1,11 @@
+{
+  "name": "@dev/eip712",
+  "version": "1.0.0",
+  "description": "A template for monorepo",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "rm -rf dist"
+  }
+}
