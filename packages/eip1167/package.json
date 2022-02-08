@@ -1,0 +1,10 @@
+{
+  "name": "@dev/eip1167",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "rm -rf dist"
+  }
+}
