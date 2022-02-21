@@ -7,8 +7,5 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "clean": "rm -rf dist"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.4.0"
   }
 }

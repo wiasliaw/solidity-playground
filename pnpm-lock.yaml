@@ -9,7 +9,7 @@ importers:
       '@ethersproject/providers': ^5.0.0
       '@nomiclabs/hardhat-ethers': ^2.0.3
       '@nomiclabs/hardhat-waffle': ^2.0.1
-      '@openzeppelin/contracts': ^4.4.0
+      '@openzeppelin/contracts': ^4.5.0
       '@typechain/ethers-v5': ^8.0.5
       '@typechain/hardhat': ^3.0.0
       '@types/chai': ^4.2.22
@@ -27,7 +27,7 @@ importers:
     dependencies:
       '@nomiclabs/hardhat-ethers': 2.0.3_ethers@5.5.2+hardhat@2.7.0
       '@nomiclabs/hardhat-waffle': 2.0.1_60a083bb2c8854f5884feab66e40858d
-      '@openzeppelin/contracts': 4.4.0
+      '@openzeppelin/contracts': 4.5.0
       '@typechain/hardhat': 3.0.0_291b6e46b34e447edd2b99175ad36409
       hardhat: 2.7.0
     devDependencies:
@@ -47,14 +47,14 @@ importers:
       typechain: 6.0.5_typescript@4.5.2
       typescript: 4.5.2
 
+  packages/eip1822:
+    specifiers: {}
+
   packages/eip191:
     specifiers: {}
 
   packages/eip2612:
-    specifiers:
-      '@openzeppelin/contracts': ^4.4.0
-    dependencies:
-      '@openzeppelin/contracts': 4.4.0
+    specifiers: {}
 
 packages:
 
@@ -555,8 +555,8 @@ packages:
       hardhat: 2.7.0
     dev: false
 
-  /@openzeppelin/contracts/4.4.0:
-    resolution: {integrity: sha512-dlKiZmDvJnGRLHojrDoFZJmsQVeltVeoiRN7RK+cf2FmkhASDEblE0RiaYdxPNsUZa6mRG8393b9bfyp+V5IAw==}
+  /@openzeppelin/contracts/4.5.0:
+    resolution: {integrity: sha512-fdkzKPYMjrRiPK6K4y64e6GzULR7R7RwxSigHS8DDp7aWDeoReqsQI+cxHV1UuhAqX69L1lAaWDxenfP+xiqzA==}
     dev: false
 
   /@resolver-engine/core/0.3.3:
