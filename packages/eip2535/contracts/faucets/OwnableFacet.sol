@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "../interfaces/IERC173.sol";
-import {LibDiamond} from "../libraries/LibDiamond.sol";
+import {LibDiamond} from "../LibDiamond.sol";
 
 contract OwnableFacet is IERC173 {
     function owner() external view override returns (address) {
